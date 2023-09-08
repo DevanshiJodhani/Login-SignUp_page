@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Belanosima&family=Josefin+Sans:wght@100&family=Poppins:ital,wght@0,500;0,600;1,300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.heading{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+.nav{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav,
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo{
+    font-size: 33px;
+    font-weight: 600;
+    color: #00021d;
+    pointer-events: none;
+    letter-spacing: 1.5px;
+}
+
+.items{
+    column-gap: 55px;
+}
+
+.items a{
+    color: #111;
+    font-size: 22px;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+
+}
+
+.items a:hover{
+    color: #fff;
+    background: #111;
+
+}
+
+.btn{
+    padding: 8px 30px;
+    border: 2px solid #111;
+    background: transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #111;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.btn:active{
+    transform: scale(0.70);
+}
+
+.btn:hover{
+    background: #111;
+    color: #fff;
+}
+
+.main-content{
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+.main-content h2{
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.main-content span{
+    color: #00021d;
+    font-size: 65px;
+}
+
+.main-content p{
+    color: #000;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.main-content .btn{
+    border: 2px solid #000;
+    color: #000;
+}
+.main-content .btn:hover{
+    color: #fff;
+}
+
+.home{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(118, 234, 196, 0.6), rgba(199, 182, 174, 0.5)), url('img/bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.form-content{
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    backdrop-filter: blur(150px);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 0 rgba(230, 213, 230, 0.8),
+    inset -20px 20px 70px 20px #fff,
+    inset 0 0 10px 0 #ffb3d5;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in;
+     
+} 
+
+.close-form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 25px;
+    opacity: 0.7;
+    cursor: pointer;
+    background: #00021d;
+    padding: 10px;
+    border-radius: 0 10px;
+}
+
+.form-content h2{
+    font-size: 45px;
+    color: #00021d;
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+
+}
+
+.input_box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #00021d;
+    background: transparent;
+    color: #00021d;
+    transition: all 0.5s ease;
+
+}
+.input_box input:focus{
+    border-color: #ff0073;
+
+}
+.input_box i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    margin-left: -20px;
+    color: #00021d;
+}
+
+.option_check{
+    display: flex;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.form-content a{
+    color: #32046d;
+    font-size: 15px;
+}
+
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.checkbox{
+    display: flex;
+    white-space: nowrap;
+    font-size: 15px;
+    column-gap: 10px;
+}
+
+.checkbox label{
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    color: #00021d;
+}
+
+.form-content .btn{
+    background: #00021d;
+    padding: 15px 0;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+
+}
+
+.form-content .btn:hover{
+    color: #0ef;
+}
+
+.signin-up{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+.signup_form{
+    display: none;
+}
+
+.home.show .form-content{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.form-content.active .signup_form{
+    display: block;
+}
+
+.form-content.active .login_form{
+    display: none;
+}

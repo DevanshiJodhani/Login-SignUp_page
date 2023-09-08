@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <!-- ======================== Link CSS ============================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ============================== Icons ========================== -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    
+
+    <header class="heading">
+        <nav class="nav">
+            <a href="#" class="logo">LOGO.</a>
+
+            <ul class="nav_bar">
+                <li class="items">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Review</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <button class="btn" id="form-open">Login</button>
+        </nav>
+
+        <div class="main-content">
+            <h2><span>Hello, </span> Welcome to our world...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae commodi eius ut quos repellendus accusantium itaque in corrupti earum? Facilisd excepturi neque expedita fugiat saepe sequi provident enim vero tempora hic nesciunt.</p>
+
+            <button class="btn">Read More</button>
+        </div>
+    </header>
+
+    <!-- ====================HOme ================ -->
+
+    <section class="home">
+        <div class="form-content">
+            <i><ion-icon name="close" class="close-form"></ion-icon></i>
+
+
+            <!-- ================ Login Form ============================= -->
+
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <i><ion-icon name="mail"></ion-icon></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter Your password" required>
+                        <i><ion-icon name="lock-closed"></ion-icon></i>
+                    </div>
+
+                    <div class="option_check">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember Me</label>
+                        </span>
+
+                        <a href="#" class="forgot">Forgot Password ?</a>
+                    </div>
+
+                    <button class="btn">Login</button>
+
+                    <div class="signin-up">
+                        Don't Have an account ? <a href="#" class="signup">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ==================== Sign up form ========================= -->
+
+            <div class="form signup_form">
+                <form action="#">
+                    <h2>Sign Up</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <i><ion-icon name="mail"></ion-icon></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" required>
+                        <i><ion-icon name="lock-closed"></ion-icon></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required>
+                        <i><ion-icon name="lock-closed"></ion-icon></i>
+                    </div>
+
+                    <button class="btn">Sign In</button>
+
+                    <div class="signin-up">
+                        Already Have an account ? <a href="#" class="login">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
