@@ -10,5 +10,5 @@ I have created Login & Sign Up form using html, css and JavaScript.
 
 ## 👩‍💻 Tech Stack
 - HTML5
--CSS3
--Java Script
+- CSS3
+- Java Script
